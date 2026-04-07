@@ -4,6 +4,7 @@ import { UserContext } from "./context/UserContext";
 import MyStateComponent from "./Hooks/MyStateComponent";
 import MyUseRef from "./Hooks/UseRef/MyUseRef";
 import Parent from "./Hooks/UseRef/Parent";
+import Counter from "./Hooks/UseReducer/Counter";
 
 function App() {
   const [name, setName] = useState("Aarav");
@@ -16,6 +17,8 @@ function App() {
       <UserContext.Provider value={{ name, setName }}>
         <Parent />
       </UserContext.Provider>
+      <hr />
+      <Counter />
     </>
   );
 }
