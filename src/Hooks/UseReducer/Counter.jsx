@@ -1,6 +1,9 @@
 import React, { useReducer } from "react";
 
+// initialize count value
 const initialState = { count: 0 };
+
+// reducer logic
 function reducer(state, action) {
   switch (action.type) {
     case "increment":
@@ -9,10 +12,13 @@ function reducer(state, action) {
       return { count: state.count - 1 };
     case "reset":
       return { count: 0 };
+    default:
+      state;
   }
 }
 
 const Counter = () => {
+  // reducer state to manage states
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <div>

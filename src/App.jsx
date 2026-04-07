@@ -5,6 +5,7 @@ import MyStateComponent from "./Hooks/MyStateComponent";
 import MyUseRef from "./Hooks/UseRef/MyUseRef";
 import Parent from "./Hooks/UseRef/Parent";
 import Counter from "./Hooks/UseReducer/Counter";
+import User from "./Hooks/UseReducer/User";
 
 function App() {
   const [name, setName] = useState("Aarav");
@@ -19,6 +20,8 @@ function App() {
       </UserContext.Provider>
       <hr />
       <Counter />
+      <hr />
+      <User />
     </>
   );
 }
